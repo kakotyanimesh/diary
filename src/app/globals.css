@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+    --background: #f7f7f7;
+    --foreground: #0d0505;
+}
+html {
+    font-family: var(--font-plexSans);
+}
+
+@theme inline {
+    --shadow-primary: 0px 0px 2px 0px #ff99c8;
+    --shadow-purple: 0px 0px 3px 0px #e4c1f9;
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-pink: hsl(332, 100%, 80%);
+    --color-yellow: hsl(54, 91%, 86%);
+    --color-green : hsl(143, 62%, 89%);
+    --color-blue: hsl(200, 87%, 82%);
+    --color-purple : hsl(278, 82%, 87%);
+    --font-plexMono: var(--font-plexSans);
+    --font-plexSans: var(--font-plexSans);
+    --font-dotted: var(--dotted-font);
+    --font-paper: var(--paper-candy);
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+}
