@@ -1,4 +1,3 @@
-import { dottedFont } from "@/fonts/font";
 import { cn } from "@/lib/cn";
 import Link from "next/link";
 import React, { forwardRef, HTMLAttributes,  } from "react";

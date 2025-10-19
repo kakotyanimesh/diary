@@ -47,9 +47,9 @@ export const { handlers, signIn, auth, signOut } = NextAuth({
                     if (!comparePassword) return null;
 
                     return {
-                        id: String(existingUser.id),
+                        id: existingUser.id.toString(),
                         email: existingUser.email,
-                    } as const;
+                    };
                     // eslint-disable-next-line @typescript-eslint/no-unused-vars
                 } catch (error) {
                     return null;
