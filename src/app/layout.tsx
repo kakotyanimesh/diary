@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { dottedFont, paperCandy, geist, plexSans, plexMono } from "@/fonts/font";
 
 import "./globals.css";
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en" className={cn(plexSans.variable, plexMono.variable, dottedFont.variable, paperCandy.variable, geist.variable)}>
       <body>
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
